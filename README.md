@@ -10,6 +10,13 @@ In this assignment, I reacreated a design using all the components stated in the
 
 - I created the react-native folder.
 - I installed a react-native-responsive-screen to aid in the responsiveness of the app.
+
 - I imported the profile image from the UI design.
-- I created the Frame 1 which includes the name and the profile, and styled it to closely match the UI design given.
-- 
+- I created the Frame 1 which includes the name, available task for the day and the profile, and styled it to closely match the UI design given.
+
+- I added a scrollview components to enable content after the Frame 1 box can be scrolled up or down
+
+- I imported the filter image and search image from the UI design
+- I created the search bar which includes the search image, a search bar and the filter image, and styled it to closely match the UI design given. 
+
+-
