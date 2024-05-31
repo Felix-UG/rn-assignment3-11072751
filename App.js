@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TextInput } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import { TextInput } from 'react-native-web';
+import CategoriesCard from './components/CategoriesCard';
 const profileImage = require("./assets/profile-image.png");
 const searchImage = require("./assets/search-image.png");
 const filterImage = require("./assets/filter.png");
@@ -28,20 +28,22 @@ export default function App() {
             <Image source={filterImage}/>
           </View>
         </View>
-
+        
+      <CategoriesCard/>
+      
 
       </ScrollView>
       <StatusBar style="auto" />
     </View>
   );
-}
+};
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F7F0E8',
-    
-    
+     
   },
   frame1: {
     marginTop: 52,
@@ -56,9 +58,12 @@ const styles = StyleSheet.create({
     // backgroundColor: 'tomato',
   },
   userName: {
-    fontSize: hp('3%'),
+    fontSize: hp('5%'),
     fontWeight: 'bold',
   }, 
+  profile:{
+    alignSelf: 'center',
+  },
   search: {
     width: wp('90%'),
     // backgroundColor: 'blue',
@@ -78,9 +83,10 @@ const styles = StyleSheet.create({
   searchBox: {
     height: 50,
     width: wp('60%'),
-    paddingLeft: 10,
-    fontSize: hp('2'),
-    border: '',
-    fontWeight: 'bold'
-  }
+    padding: 10,
+    fontSize: hp('3%'),
+    fontWeight: 'bold',
+    
+  }, 
+  
 });
