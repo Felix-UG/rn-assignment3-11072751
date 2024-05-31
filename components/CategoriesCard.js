@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet, ScrollView, Image} from 'react-native';
+import {Text, View, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp}  from 'react-native-responsive-screen';
 const imageOne = require("../assets/young-woman-working-online.png");
 const imageTwo = require("../assets/young-woman-working-at-desk.png");
@@ -16,62 +16,78 @@ export default function CategoriesCard (){
         <View style={styles.categories}>
             <Text style={styles.categoriesText}>Categories</Text>
             <ScrollView horizontal>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Exercise</Text>
-                        <Text style={styles.textTwo}>12 Tasks</Text>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Exercise</Text>
+                            <Text style={styles.textTwo}>12 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageOne}/>
                     </View>
-                        <Image style={styles.image}source={imageOne}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Study</Text>
-                        <Text style={styles.textTwo}>12 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Study</Text>
+                            <Text style={styles.textTwo}>12 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageTwo}/>
                     </View>
-                        <Image style={styles.image}source={imageTwo}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Code</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Code</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageThree}/>
                     </View>
-                        <Image style={styles.image}source={imageThree}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Cook</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Cook</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageFour}/>
                     </View>
-                        <Image style={styles.image}source={imageFour}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Communicate</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Communicate</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageFive}/>
                     </View>
-                        <Image style={styles.image}source={imageFive}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Surveys</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Surveys</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageSix}/>
                     </View>
-                        <Image style={styles.image}source={imageSix}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Review</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Review</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageSeven}/>
                     </View>
-                        <Image style={styles.image}source={imageSeven}/>
-                </View>
-                <View style={styles.card}>
-                    <View style={styles.text}>
-                        <Text style={styles.textOne}>Repair</Text>
-                        <Text style={styles.textTwo}>0 Tasks</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.card}>
+                        <View style={styles.text}>
+                            <Text style={styles.textOne}>Repair</Text>
+                            <Text style={styles.textTwo}>0 Tasks</Text>
+                        </View>
+                            <Image style={styles.image}source={imageEight}/>
                     </View>
-                        <Image style={styles.image}source={imageEight}/>
-                </View>
+                </TouchableOpacity>
 
             </ScrollView>
         </View>

@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ScrollView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import CategoriesCard from './components/CategoriesCard';
+import OngoingTask from './components/OngoingTask';
 const profileImage = require("./assets/profile-image.png");
 const searchImage = require("./assets/search-image.png");
 const filterImage = require("./assets/filter.png");
@@ -15,7 +16,9 @@ export default function App() {
           <Text style={styles.availableTask}>14 tasks today</Text>
         </View>
         <View style={styles.profile}>
-          <Image source={profileImage}/>
+          <TouchableOpacity>
+            <Image source={profileImage}/>
+          </TouchableOpacity>
         </View>
       </View>
       <ScrollView style={styles.scrollView}>
@@ -25,12 +28,15 @@ export default function App() {
             <TextInput style={styles.searchBox} placeholder='Search' />
           </View>
           <View>
-            <Image source={filterImage}/>
+            <TouchableOpacity>
+              <Image source={filterImage}/>
+            </TouchableOpacity>
           </View>
         </View>
         
       <CategoriesCard/>
-      
+      <OngoingTask/>
+
 
       </ScrollView>
       <StatusBar style="auto" />
@@ -51,7 +57,8 @@ const styles = StyleSheet.create({
     // backgroundColor: 'red',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginBottom: hp('2'),
 
   },
   group1: {
