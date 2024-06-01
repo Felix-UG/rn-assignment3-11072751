@@ -3,9 +3,11 @@ import { StyleSheet, Text, View, Image, ScrollView, TextInput, TouchableOpacity 
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import CategoriesCard from './components/CategoriesCard';
 import OngoingTask from './components/OngoingTask';
+
 const profileImage = require("./assets/profile-image.png");
 const searchImage = require("./assets/search-image.png");
 const filterImage = require("./assets/filter.png");
+
 
 export default function App() {
   return (
@@ -36,6 +38,7 @@ export default function App() {
         
       <CategoriesCard/>
       <OngoingTask/>
+      
 
 
       </ScrollView>

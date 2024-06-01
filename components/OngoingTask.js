@@ -79,7 +79,7 @@ export default function OngoingTask (){
             </TouchableOpacity>
             <TouchableOpacity>
                 <View style={styles.box}>
-                    <Text style={styles.ongoingTaskName}>Drink at least 8 glasses of water today</Text>
+                    <Text style={styles.ongoingTaskName}>Drink at least 8 glasses of water</Text>
                 </View>
             </TouchableOpacity>
         </ScrollView>
