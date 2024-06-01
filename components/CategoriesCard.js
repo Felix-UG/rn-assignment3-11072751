@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet, FlatList} from 'react-native';
+import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 const imageOne = require('../assets/young-woman-working-online.png');
 const imageTwo = require("../assets/young-woman-working-at-desk.png");
@@ -23,6 +23,7 @@ const cards = [
 
 const CategoriesCard = () =>{
     const renderItem = ({ item }) => (
+        <TouchableOpacity>
         <View style={styles.card}>
             <View style={styles.text}>
                 <Text style={styles.textOne}>{item.textOne}</Text>
@@ -30,11 +31,12 @@ const CategoriesCard = () =>{
             </View> 
             <Image source={ item.image } style={styles.image}/>
         </View>
+        </TouchableOpacity>
     );
 
     return (
         <View style={styles.categories}>
-            <Text style={styles.categoriesText}>Categories</Text>
+            <Text style={styles.categoriesCardText}>Categories</Text>
             <FlatList
                 data={cards}
                 renderItem={renderItem}
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
         marginTop: hp('5%'),
         paddingLeft: wp('5%'),
     },
-    categoriesText:{
+    categoriesCardText:{
         fontSize: hp('3.5%'),
         fontWeight: 'bold',
     }, 

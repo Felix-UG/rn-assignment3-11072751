@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
   frame1: {
     marginTop: 52,
     width: wp('90%'),
-    // backgroundColor: 'red',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignSelf: 'center',
@@ -65,18 +64,20 @@ const styles = StyleSheet.create({
 
   },
   group1: {
-    // backgroundColor: 'tomato',
+    
   },
   userName: {
     fontSize: hp('5%'),
     fontWeight: 'bold',
   }, 
+  availableTask: {
+    fontSize: hp('2%'),
+  },
   profile:{
     alignSelf: 'center',
   },
   search: {
     width: wp('90%'),
-    // backgroundColor: 'blue',
     alignSelf: 'center',
     marginTop: hp('3%'),
     flexDirection: 'row',
