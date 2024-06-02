@@ -35,10 +35,10 @@ I used the `Image` component to display images and icons in the app.
  
 ## Screenshots
 ### IOS 
-![IOS Application Screenshot](screenshots\ios-interface.jpg)
+![IOS Application Screenshot](./screenshots/ios-interface.jpg)
 
 ### ANDROID 
-![Android Application Screenshot](screenshots\android-interface.jpg)
+![Android Application Screenshot](./screenshots/android-interface.jpg)
 
 ### END 
 
