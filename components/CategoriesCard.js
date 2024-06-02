@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+
 const imageOne = require('../assets/young-woman-working-online.png');
 const imageTwo = require("../assets/young-woman-working-at-desk.png");
 const imageThree = require("../assets/Code-typing.png");
@@ -33,6 +34,7 @@ const CategoriesCard = () =>{
         </View>
         </TouchableOpacity>
     );
+
 
     return (
         <View style={styles.categories}>

@@ -20,8 +20,6 @@ const tasks = [
 ]
 
 
-
-
 const OngoingTask = () => {
     const renderItem = ({ item }) => (
         <TouchableOpacity>
@@ -30,8 +28,6 @@ const OngoingTask = () => {
         </View>
         </TouchableOpacity>
     );
-
-
 
 
     return(

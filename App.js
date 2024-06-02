@@ -36,10 +36,8 @@ export default function App() {
           </View>
         </View>
         
-      <CategoriesCard/>
-      <OngoingTask/>
-      
-
+        <CategoriesCard/>
+        <OngoingTask/>
 
       </ScrollView>
       <StatusBar style="auto" />
@@ -52,7 +50,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F7F0E8',
-     
   },
   frame1: {
     marginTop: 52,
@@ -61,10 +58,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignSelf: 'center',
     marginBottom: hp('2'),
-
   },
-  group1: {
-    
+  group1: { 
   },
   userName: {
     fontSize: hp('5%'),
@@ -96,8 +91,7 @@ const styles = StyleSheet.create({
     width: wp('60%'),
     padding: 10,
     fontSize: hp('3%'),
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold',  
   }, 
   
 });
